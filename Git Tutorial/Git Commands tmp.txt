@@ -1,0 +1,105 @@
+List of Git Commnads
+
+1. git inti-
+2. git status
+3. git add
+4. git commit -m "adding a comment about the changes done"
+5. git add using wild card characters- git add '*.txt'
+6. git log - to see he log of git repositories
+7. git remote add "name of local repository" "url of git server repository"
+8. git push -u "name of local repository" "name of default branch"
+9. git pull "name of local repository" "name of default branch"
+10. git diff --staged
+11. git reset "name of file"
+12  git checkout -- octocat.txt
+13 git branch "name of branch"
+14 git checkout "name of the branch"
+15 git branch -d "name of the branch"
+16 git add --all ---> add all the new or modified files
+17. git diff
+
+Git reset commands
+
+git reset --soft HEAD^----> undo last commit,put changes into staging
+
+if you have forget to add file to last commit and one to add to the last commit then use below command after staging 
+
+git commit --amend -m "New Message" change the last commit
+
+gir reset --hard HEAD^ Undo last commit and all changes
+
+git reset --hard HEAD^^ undo last 2 commit and all changes
+
+Adding a remote
+
+=================================================
+git remote add "name of this remote" https://
+
+=================================================================
+
+git remote -v ----> show remote repositories
+
+push commands
+
+git push -u origin master
+            (name of local repository) (local branch to push)
+
+pull commands
+
+git pull
+
+To add and remove remotes
+git remote add <name> <address>
+
+git remote rm <name>
+
+-->command to skip a staging
+git commit -a -m "message to be displayed"
+
+--->command to clone a repository
+git clone "name of repository"
+
+---> command to switch to a new branch
+git checkout branch
+
+--> command to merge two branch
+git merge <name of branch>
+
+---> command to create and checkout a new branch
+git checkout -b <name of branch>
+
+---> command to see the list of branches
+git branch -r
+
+--> command to see the list of remote branches
+git remote show origin
+
+-->command to delete remote branch
+git push origin:name of remote branch
+
+-->command to delete local branch
+git branch -d <name of branch>
+
+-->command to clean up deleted remote branch
+git remote prune origin
+
+--->command to list all tags
+git tags
+
+--> command to add a new tag
+git tag -a v0.0.3 -m "version 0.0.3"
+
+-->command to push tag
+git push --tags
+
+
+===================Collobarating the basics==========================================
+LEVEL-5
+
+==========================Branching=====================================
+
+--> command to push branch to the remote
+git push <name of remote repo> <name of branch>
+
+-->command to get the branch from the remote repository
+git fetch
