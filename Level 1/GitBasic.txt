@@ -1,0 +1,15 @@
+-->command to add a file in staging area in git
+git add <name of the file>
+           or
+git add -all
+           or
+git  add "*.txt"----> add all file in whole project
+           or
+git add docs/*.txt
+           or
+git add docs/
+          or
+git add *.txt -------> add file in current directory
+-->command to commit a file in git
+
+git commit -m "message to be displayed"
