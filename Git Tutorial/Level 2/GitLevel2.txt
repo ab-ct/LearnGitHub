@@ -1,0 +1,43 @@
+-->command to list unstaged differences since last commit
+git diff
+
+-->command to list staged differences since last commit
+git diff --staged
+
+
+-->command to unstage file
+git reset HEAD -- <name of the file>
+
+-->command to blow away all changes since last commit
+git checkout --<name of file>
+
+-->command to skip staging and do the commit
+git commit -a -m "message to be displayed"
+
+-->command to undoing a last commit,put changes into staging
+git reset --soft HEAD^
+
+-->command to add a changes(eg:creating a text file) to the last commit
+git commit --amend -m "added the new file and modified also"
+
+-->command to undo last commit and blow away all changes (risky to use)
+git reset --hard HEAD^
+
+or
+for last two commits
+git reset --hard HEAD^^
+
+-->command to add a remote repository
+git remote add origin https://
+
+-->command to list all the remote repositories
+git remote -v
+
+-->command to push the code to remote repository
+git push -u <name of remote repository><name of local branch>
+
+-->command to pull down the changes from the remote repository
+git pull
+
+-->command to remove remote
+git remote rm <name>
