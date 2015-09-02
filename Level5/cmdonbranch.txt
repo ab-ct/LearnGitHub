@@ -1,0 +1,34 @@
+-->command to push a branch to remote repo
+git push origin <name of branch>
+
+--> command to list all remote branch
+bit branch -r
+
+--> command to see local and remote branch 
+git remote show origin
+
+-->command to delete remote branch
+git push origin :<name of branch>
+
+-->command to delete a local branch
+git branch -d <name of the branch>
+           or
+git branch -D <name of the branch> [ignoring the merge message]
+
+
+--->command to clean up deleted remote branch
+git remote prune origin
+
+
+--> command to list all available tags
+git tag
+
+-->command to chekcout code at commit
+git checkout <name of tag>
+
+-->command to add a new tag
+git tag -a v0.0.1 -m "message here"
+
+--> command to push new tags
+git push --tags
+
