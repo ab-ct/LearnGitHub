@@ -1,1 +1,13 @@
--->command
+-->command to create branch
+git branch cat
+--> command to switch to different branch
+git checkout <name of branch>
+
+--> command to merge two branch
+git merge <name of branch>
+
+--> command to delete a branch
+git branch -d <name of branch>
+
+-->command to create and checkout branch
+git checkout -b <name of branch>
